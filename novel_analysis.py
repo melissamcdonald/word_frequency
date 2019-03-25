@@ -29,14 +29,14 @@ URLS = {'Dracula': 'http://www.gutenberg.org/files/345/345-h/345-h.htm',
     'Beowulf': 'http://www.gutenberg.org/files/16328/16328-h/16328-h.htm',
     'Moby_Dick': 'http://www.gutenberg.org/files/2701/2701-h/2701-h.htm',
     'Leviathan': 'http://www.gutenberg.org/files/3207/3207-h/3207-h.htm',
-    'Romance_Lust':'http://www.gutenberg.org/cache/epub/30254/pg30254-images.html',
+ #  'Romance_Lust':'http://www.gutenberg.org/cache/epub/30254/pg30254-images.html',
     'War_Peace': 'http://www.gutenberg.org/files/2600/2600-h/2600-h.htm',
     'Ben_Franklin': 'http://www.gutenberg.org/files/20203/20203-h/20203-h.htm',
     'Wendigo': 'http://www.gutenberg.org/files/10897/10897-h/10897-h.htm',
     'Mrs_Rowlandson': 'http://www.gutenberg.org/files/851/851-h/851-h.htm',
     'Earnest': 'http://www.gutenberg.org/files/844/844-h/844-h.htm',
     'Great_Expectations': 'http://www.gutenberg.org/ebooks/1400',
-    'Kama': 'http://www.gutenberg.org/files/27827/27827-h/27827-h.htm',
+ #   'Kama': 'http://www.gutenberg.org/files/27827/27827-h/27827-h.htm',
     'Peter_Pan': 'http://www.gutenberg.org/files/16/16-h/16-h.htm'
        }
 
@@ -96,7 +96,7 @@ print(df.sort_values('label'))
 
 
 
-/*
+
 # Import NMF
 from sklearn.decomposition import NMF
 
@@ -115,7 +115,7 @@ df = pd.DataFrame(nmf_features, index=titles_array)
 # Print the NMF features
 print(df)
 
-*/
+
 
 
 #pd.DataFrame(books)
@@ -191,7 +191,7 @@ def wordcounts(url):
     words_ns = []
 
     for word in words:
-       if word != 'â': 
+       if word != 'Ã¢': 
            if word not in sw:
                words_ns.append(word)
         
